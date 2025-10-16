@@ -41,20 +41,10 @@ const SidebarItem = ({
 }: SidebarItemProps) => (
   <button
     onClick={onClick}
-    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-medium transition-colors group ${
-      isActive
-        ? 'bg-green-600 text-white'
-        : 'text-gray-300 hover:bg-black hover:text-white'
-    }`}
+    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-medium transition-colors group text-gray-400 hover:bg-[#333] hover:shadow-gray-800  hover:shadow hover:text-white`}
   >
     <div className="flex items-center gap-3">
-      <div
-        className={`${
-          isActive ? 'text-white' : 'text-gray-400 group-hover:text-white'
-        }`}
-      >
-        {icon}
-      </div>
+      <div className={``}>{icon}</div>
       <span>{label}</span>
     </div>
     <div className="flex items-center gap-2">
@@ -86,56 +76,56 @@ const Sidebar = () => {
 
   const mainMenuItems = [
     {
-      icon: <MessageSquare size={18} className="text-blue-500" />,
+      icon: <MessageSquare size={18} />,
       label: 'Chats',
       isActive: true,
     },
     {
-      icon: <Search size={18} className="text-green-500" />,
+      icon: <Search size={18} />,
       label: 'Search',
       shortcut: '⌘F',
     },
     {
-      icon: <CreditCard size={18} className="text-purple-500" />,
+      icon: <CreditCard size={18} />,
       label: 'Manage subscription',
     },
     {
-      icon: <HelpCircle size={18} className="text-orange-500" />,
+      icon: <HelpCircle size={18} />,
       label: 'Updates & FAQ',
     },
     {
-      icon: <Settings size={18} className="text-red-500" />,
+      icon: <Settings size={18} />,
       label: 'Settings',
     },
   ];
 
   const secondaryMenuItems = [
     {
-      icon: <Users size={18} className="text-green-500" />,
+      icon: <Users size={18} />,
       label: 'Welcome',
       badge: '10',
     },
     {
-      icon: <Lightbulb size={18} className="text-green-500" />,
+      icon: <Lightbulb size={18} />,
       label: 'LLR Production',
     },
     {
-      icon: <Heart size={18} className="text-green-500" />,
+      icon: <Heart size={18} />,
       label: 'Favorites',
     },
     {
-      icon: <Archive size={18} className="text-blue-500" />,
+      icon: <Archive size={18} />,
       label: 'Archived',
       badge: '123',
     },
     {
-      icon: <MoreHorizontal size={18} className="text-pink-300" />,
+      icon: <MoreHorizontal size={18} />,
       label: 'More list',
     },
   ];
 
   return (
-    <aside className="h-screen hover:overflow-y-scroll w-64 gray-color border-r border-gray-800 flex flex-col fixed top-0 left-0 z-50">
+    <aside className="h-screen rounded-md overflow-y-scroll w-64 gray-color border-r border-gray-800 flex flex-col fixed top-0 left-0 z-50">
       {/* Header */}
       <div className="p-4 h-16 border-b border-gray-800">
         <div className="flex items-center gap-3">
@@ -144,7 +134,7 @@ const Sidebar = () => {
               <div className="w-2 h-2 bg-green-600 rounded-full"></div>
             </div>
           </div>
-          <span className="text-white font-semibold text-lg">Brainwave</span>
+          <span className="text-white font-semibold text-lg">Mediagiri</span>
         </div>
       </div>
 
