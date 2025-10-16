@@ -1,0 +1,76 @@
+ <div className="w-full h-[calc(100vh-10vh)] flex gap-0">
+          {/* Column 1: Bottom to Top */}
+          <div className="flex-1 overflow-hidden relative bottom-[60px]">
+            <div className="absolute inset-0 pointer-events-none z-10 bg-gradient-to-b from-gray-950 via-transparent to-gray-950"></div>
+            <div className="marquee-up">
+              {[...images, ...images].map((src, idx) => (
+                <div
+                  key={idx}
+                  className="mb-4 rounded-lg overflow-hidden shadow-2xl shadow-black/50"
+                >
+                  <Image
+                    src={src}
+                    alt={`Community ${idx + 1}`}
+                    width={300}
+                    height={300}
+                    className="w-[300px] h-auto object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Column 2: Top to Bottom */}
+          <div className="flex-1 overflow-hidden relative bottom-[60px]">
+            <div className="absolute inset-0 pointer-events-none z-10 bg-gradient-to-b from-gray-950 via-transparent to-gray-950"></div>
+            <div className="marquee-down">
+              {[...images, ...images].map((src, idx) => (
+                <div
+                  key={idx}
+                  className="mb-4 rounded-lg overflow-hidden shadow-2xl shadow-black/50"
+                >
+                  <Image
+                    src={src}
+                    alt={`Community ${idx + 1}`}
+                    width={300}
+                    height={300}
+                    className="w-[200px] h-auto object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+
+
+
+        csss
+
+           <style jsx>{`
+        @keyframes marquee-up {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-50%);
+          }
+        }
+
+        @keyframes marquee-down {
+          0% {
+            transform: translateY(-50%);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        .marquee-up {
+          animation: marquee-up 20s linear infinite;
+        }
+
+        .marquee-down {
+          animation: marquee-down 20s linear infinite;
+        }
+      `}</style>
