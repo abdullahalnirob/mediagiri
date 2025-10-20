@@ -1,12 +1,20 @@
+import About from '@/components/About';
+import Benefits from '@/components/Benefits';
+import DashboardCard from '@/components/DashboardCard';
+import HomeNavbar from '@/components/HomeNavbar';
+import Team from '@/components/Team';
+import Home from '@/pages/home';
 import React from 'react';
 
 const Page = () => {
   return (
-    <div className="px-6 m-10">
-      <p className="text-white text-xl">
-        Navigate to{' '}
-        <span className="bg-white/5  px-1 rounded">main/explore</span>
-      </p>
+    <div className="">
+      <HomeNavbar />
+      <Home />
+      <About />
+      <Benefits />
+      <DashboardCard />
+      <Team />
     </div>
   );
 };

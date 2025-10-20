@@ -1,10 +1,16 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+html{
+  scroll-behavior: smooth;
+}
 @custom-variant dark (&:is(.dark *));
 body{
   background-color: var(--foreground);
+  font-family: "Inter", sans-serif;
+
 }
+
 button{
   cursor: pointer;
 }
@@ -12,6 +18,15 @@ button{
 .gray-color{
   background-color: var(--secondary-foreground);
 }
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
