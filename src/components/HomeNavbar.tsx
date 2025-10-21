@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { BiSolidDonateHeart } from 'react-icons/bi';
 
 const HomeNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +17,8 @@ const HomeNavbar = () => {
                 Mitcko
               </span>
             </div>
-            <button className="hidden md:block bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm rounded-md px-4 py-2 text-white text-sm font-medium transition-all">
-              Contact us
+            <button className="hidden md:flex bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm rounded-md px-4 py-2 text-white text-sm font-medium transition-all items-center space-x-2">
+              <p>Donate us</p> <BiSolidDonateHeart size={20}/>
             </button>
           </div>
 

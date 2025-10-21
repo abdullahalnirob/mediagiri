@@ -14,10 +14,14 @@ const About = () => {
     isOnline: false,
   };
   return (
-    <div id='about'>
+    <div id="about">
       <h1 className="text-white font-bold text-center text-5xl">
         Chating now with your friend
       </h1>
+      <p className="my-5 text-center text-gray-400">
+        It’s not just about words on a screen — it’s about feeling close, even
+        when miles apart.
+      </p>
       <div className="flex mt-10 justify-center">
         <p className="text-white text-xl bg-gradient-to-b from-sky-500 to-blue-600 px-3 py-2 rounded-md">
           Smart features
