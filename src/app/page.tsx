@@ -2,7 +2,9 @@ import About from '@/components/About';
 import Benefits from '@/components/Benefits';
 import DashboardCard from '@/components/DashboardCard';
 import HomeNavbar from '@/components/HomeNavbar';
+import PricingPlans from '@/components/PricingPlans';
 import Team from '@/components/Team';
+import VivaChatHero from '@/components/VivaChatHero';
 import Home from '@/pages/home';
 import React from 'react';
 
@@ -14,7 +16,9 @@ const Page = () => {
       <About />
       <Benefits />
       <DashboardCard />
-      <Team />
+      {/* <Team /> */}
+      <PricingPlans />
+      <VivaChatHero />
     </div>
   );
 };
