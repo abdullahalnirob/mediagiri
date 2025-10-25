@@ -43,7 +43,7 @@ export default function Home() {
         }
       `}</style>
       {/* Hero Section */}
-      <section className="flex relative z-40 items-center flex-col-reverse md:flex-row  justify-between px-6 md:px-30 py-24 gap-12">
+      <section className="flex h-screen relative z-40 items-center flex-col-reverse md:flex-row  justify-between px-6 md:px-30 py-24 gap-12">
         {/* Left: Text Content */}
         <div className="max-w-xl">
           <h1 className="bebas-neue-regular text-4xl  md:text-7xl font-bold leading-tight mb-6">

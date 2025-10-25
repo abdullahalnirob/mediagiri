@@ -46,11 +46,8 @@ const HomeNavbar = () => {
 
           {/* Login Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 px-6 py-2.5 rounded-md text-white font-semibold shadow-lg shadow-sky-500/30 transition-all duration-300">
-              Login
-            </button>
             <button className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 px-6 py-2.5 rounded-lg text-white font-semibold shadow-lg shadow-sky-500/30 transition-all duration-300">
-              Sign up
+              Create Account
             </button>
           </div>
 

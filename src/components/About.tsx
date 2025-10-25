@@ -15,13 +15,15 @@ const About = () => {
   };
   return (
     <div id="about">
-      <h1 className="text-white font-bold text-center text-5xl">
-        Chating now with your friend
-      </h1>
-      <p className="my-5 text-center text-gray-400">
-        It’s not just about words on a screen — it’s about feeling close, even
-        when miles apart.
-      </p>
+      <div className="px-10">
+        <h1 className="text-white font-bold text-center text-xl md:text-5xl">
+          Chating now with your friend
+        </h1>
+        <p className="my-5 text-sm md:text-md text-center text-gray-400">
+          It’s not just about words on a screen — it’s about feeling close, even
+          when miles apart.
+        </p>
+      </div>
       <div className="flex mt-10 justify-center">
         <p className="text-white text-xl bg-gradient-to-b from-sky-500 to-blue-600 px-3 py-2 rounded-md">
           Smart features
@@ -30,7 +32,7 @@ const About = () => {
       <div className="flex justify-center">
         <img className="rotate-x-180 w-40" src="arrow.png" alt="" />
       </div>
-      <div className="grid justify-center grid-cols-3 px-40 mb-10 gap-7">
+      <div className="grid justify-center grid-cols-1 md:grid-cols-3 px-5 md:px-40 mb-10 gap-7">
         {/* layout one */}
         <div className="flex flex-col items-start justify-between">
           <div className="mx-auto">
@@ -39,14 +41,16 @@ const About = () => {
               className="rounded-full object-cover w-28 h-28"
               alt=""
             />
-            <p className="text-white text-center my-1">Abdul Majid</p>
+            <p className="text-white text-center my-4 md:my-1">Abdul Majid</p>
           </div>
           <div className="flex items-center px-6 py-3 rounded-md bg-gradient-to-b from-sky-500 to-blue-600 text-white space-x-3">
             <img src="image1.png" className="rounded-full w-10" alt="" />
             <p className="text-xl">Sabrina Amelia</p>
           </div>
           <div>
-            <h1 className="text-3xl text-white bebas-neue-regular">Smart AI</h1>
+            <h1 className="text-3xl my-6 md:my-1 text-white bebas-neue-regular">
+              Smart AI
+            </h1>
             <p className="text-gray-200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Provident, saepe! Velit ea eaque incidunt vel quod consectetur
@@ -64,13 +68,13 @@ const About = () => {
           />
         </div>
         {/* layout three */}
-        <div className="flex flex-col items-end justify-between">
+        <div className="flex flex-col md:items-end justify-between">
           <div className="flex items-center px-3 py-3 rounded-md bg-gradient-to-b from-sky-500 to-blue-600 text-white space-x-3">
             <img src="image3.png" className="rounded-full w-10" alt="" />
             <p className="text-xl">Angella Olivia</p>
           </div>
           <div>
-            <h1 className="text-3xl text-white my-1 bebas-neue-regular">
+            <h1 className="text-3xl text-white my-6 md:my-1 bebas-neue-regular">
               Profile
             </h1>
             <div>

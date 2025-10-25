@@ -55,16 +55,16 @@ const Benefits = () => {
   ];
 
   return (
-    <div className="py-20 px-6">
-      <h1 className="text-white text-5xl font-bold text-center mb-6">
+    <div id="benefits" className="py-20 px-6">
+      <h1 className="text-white  text-xl md:text-5xl font-bold text-center mb-6">
         Why People Love Using Our App
       </h1>
-      <p className="text-gray-400 text-center max-w-3xl mx-auto mb-16">
+      <p className="text-gray-400 text-sm md:text-md text-center max-w-3xl mx-auto mb-16">
         Built for communities, creators, and friends — our platform combines
         powerful communication tools with a fun and secure social experience.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 px-40 mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 md:px-40 mx-auto">
         {benefits.map(benefit => (
           <div
             key={benefit.id}
