@@ -84,12 +84,6 @@ const Benefits = () => {
           </div>
         ))}
       </div>
-
-      <div className="text-center mt-16">
-        <button className="bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-sky-500/30">
-          Explore the Community
-        </button>
-      </div>
     </div>
   );
 };

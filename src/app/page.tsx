@@ -14,7 +14,6 @@ const Page = () => {
       <Home />
       <About />
       <Benefits />
-      <DashboardCard />
       <PricingPlans />
       <VivaChatHero />
       <Footer />

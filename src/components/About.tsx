@@ -32,7 +32,7 @@ const About = () => {
       <div className="flex justify-center">
         <img className="rotate-x-180 w-40" src="arrow.png" alt="" />
       </div>
-      <div className="grid justify-center grid-cols-1 md:grid-cols-3 px-5 md:px-40 mb-10 gap-7">
+      <div className="grid justify-center grid-cols-1 md:grid-cols-3 px-6 md:px-40 mb-10 gap-7">
         {/* layout one */}
         <div className="flex flex-col items-start justify-between">
           <div className="mx-auto">

@@ -14,7 +14,7 @@ export default function Home() {
   ];
 
   return (
-    <main id='home' className="min-h-screen text-white overflow-hidden">
+    <main id="home" className=" text-white overflow-hidden">
       <style jsx>{`
         @keyframes marquee-up {
           0% {
@@ -43,7 +43,7 @@ export default function Home() {
         }
       `}</style>
       {/* Hero Section */}
-      <section className="flex h-screen relative z-40 items-center flex-col-reverse md:flex-row  justify-between px-6 md:px-30 py-24 gap-12">
+      <section className="flex md:h-screen relative z-40 items-center flex-col-reverse md:flex-row  justify-between px-6 md:px-30 py-24 gap-12">
         {/* Left: Text Content */}
         <div className="max-w-xl">
           <h1 className="bebas-neue-regular text-4xl  md:text-7xl font-bold leading-tight mb-6">
@@ -76,7 +76,7 @@ export default function Home() {
               'linear-gradient(to bottom, transparent, black 3rem, black calc(100% - 3rem), transparent)',
           }}
         >
-          <div className="h-[200px] md:h-[500px] flex gap-6">
+          <div className="h-[300px] md:h-[500px] flex px-4 gap-6">
             {/* Column 1: Bottom to Top */}
             <div className="flex-1 overflow-hidden relative ">
               <div className="marquee-up">
